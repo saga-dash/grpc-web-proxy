@@ -1,5 +1,5 @@
 FROM golang:alpine
-RUN apt-get update && apk add --no-cache git \
+RUN apk add --no-cache git \
   && rm -rf /var/lib/apt/lists/*
 
 RUN go get -u github.com/improbable-eng/grpc-web/go/grpcwebproxy \
